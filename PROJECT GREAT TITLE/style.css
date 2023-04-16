@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Oxygen', sans-serif;
+}
+
+body {
+
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-image: radial-gradient( circle farthest-corner at 0.2% 0.5%,  rgba(68,36,164,1) 3.7%, rgba(84,212,228,1) 92.7% );
+
+}
+
+.continer {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+.text{
+    position: absolute;
+}
+
+.titl {
+    text-transform: uppercase;
+    font-size: 50px;
+    padding: .5rem 0;
+    font-weight:900 ;
+
+  
+
+}
+.text span{
+    position: absolute;
+    background-color: #000;
+    transition: .5s;
+
+
+}
+.horizantel{
+    width: 100%;
+    height: 5px;
+}
+.horizantel.first{
+    top: 0;
+    left: 0;
+}
+.horizantel.second{
+   bottom: 0;
+   right: 0;
+}
+.text:hover .horizantel.first{
+    width: 0;
+    transform: translate(-1600px);
+}
+.text:hover .horizantel.second{
+    width: 0;
+    transform: translate(1600px);
+}
+.virtical{
+    width: 6px;
+    height: 0;
+}
+.virtical.first{
+    top: 0;
+    left: 0;
+    transform: translate(-.75rem,-1000px);
+
+}
+.virtical.second{
+    right: 0;
+    bottom: 0;
+    transform: translate(.75rem,1000px);
+
+}
+.text:hover .virtical.first{
+    height: 100%;
+    
+    transform: translate(-.75rem,0);
+}
+.text:hover .virtical.virtical.second{
+    height: 100%;
+    transform: translate(.75rem,0);
+}
+
